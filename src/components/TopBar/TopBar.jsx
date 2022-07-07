@@ -1,7 +1,7 @@
 import './TopBar.css';
 
 import LanguageIcon from '@mui/icons-material/Language';
-import Logo from '../../assets/images/lama.png';
+import Logo from '../../assets/images/lama-red.png';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SettingsIcon from '@mui/icons-material/Settings';
 import User from '../../assets/images/default-user-icon.png';
@@ -15,6 +15,7 @@ const TopBar = () => {
             <img className='logo' src={Logo} alt='Logo' />
           </span>
         </div>
+
         <div className='topRight'>
           <div className='topBarIconWrapper'>
             <NotificationsNoneIcon />
