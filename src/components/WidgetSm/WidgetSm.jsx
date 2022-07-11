@@ -6,7 +6,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 const WidgetSm = () => {
   return (
     <div className='widgetSm'>
-      <span className='widgetSmTitle'>New Members</span>
+      <h3 className='widgetSmTitle'>New Members</h3>
       <ul className='widgetSmList'>
         <li className='widgetSmListItem'>
           <img src={UserImg} alt='' className='widgetSmImg' />

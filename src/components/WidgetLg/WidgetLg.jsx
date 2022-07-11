@@ -1,7 +1,69 @@
 import './WidgetLg.css';
 
+import UserImg from '../../assets/images/default-user-icon.png';
+
 const WidgetLg = () => {
-  return <div className='widgetLg'>WidgetLg</div>;
+  const Button = ({ type }) => {
+    return <button className={'widgetLgBtn ' + type}>{type}</button>;
+  };
+
+  return (
+    <div className='widgetLg'>
+      <h3 className='widgetLgTitle'>Latest Transactions</h3>
+      <table className='widgetLgTable'>
+        <tr className='widgetLgTr'>
+          <th className='widgetLgTh'>Customer</th>
+          <th className='widgetLgTh'>Date</th>
+          <th className='widgetLgTh'>Amount</th>
+          <th className='widgetLgTh'>Status</th>
+        </tr>
+        <tr className='widgetLgTr'>
+          <td className='widgetLgUser'>
+            <img src={UserImg} alt='User' className='widgetLgUserImg' />
+            <span className='widgetLgName'>Carol Freeman</span>
+          </td>
+          <td className='widgetLgDate'>May 3, 2022</td>
+          <td className='widgetLgAmount'>$355.10</td>
+          <td className='widgetLgStatus'>
+            <Button type='Approved' />
+          </td>
+        </tr>
+        <tr className='widgetLgTr'>
+          <td className='widgetLgUser'>
+            <img src={UserImg} alt='User' className='widgetLgUserImg' />
+            <span className='widgetLgName'>Carol Freeman</span>
+          </td>
+          <td className='widgetLgDate'>May 3, 2022</td>
+          <td className='widgetLgAmount'>$355.10</td>
+          <td className='widgetLgStatus'>
+            <Button type='Declined' />
+          </td>
+        </tr>
+        <tr className='widgetLgTr'>
+          <td className='widgetLgUser'>
+            <img src={UserImg} alt='User' className='widgetLgUserImg' />
+            <span className='widgetLgName'>Carol Freeman</span>
+          </td>
+          <td className='widgetLgDate'>May 3, 2022</td>
+          <td className='widgetLgAmount'>$355.10</td>
+          <td className='widgetLgStatus'>
+            <Button type='Pending' />
+          </td>
+        </tr>
+        <tr className='widgetLgTr'>
+          <td className='widgetLgUser'>
+            <img src={UserImg} alt='User' className='widgetLgUserImg' />
+            <span className='widgetLgName'>Carol Freeman</span>
+          </td>
+          <td className='widgetLgDate'>May 3, 2022</td>
+          <td className='widgetLgAmount'>$355.10</td>
+          <td className='widgetLgStatus'>
+            <Button type='Approved' />
+          </td>
+        </tr>
+      </table>
+    </div>
+  );
 };
 
 export default WidgetLg;
